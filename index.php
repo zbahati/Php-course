@@ -1,18 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Tutorial</title>
-</head>
-<body>
-<?php $name = ['james', 'Tony', 'Phillip', 'Angel', 'Alicia', 'Marta']?>
-<div>
-    <?php foreach ($name as $key => $name): ?>
-        <?php if ($name == 'Tony'): ?>
-            <li><?php echo $name ?></li>
-        <?php endif ?>
-    <?php endforeach?>
-</div>
-</body>
-</html>
+<?php
+// strtotime function
+
+// var_dump(strtotime(datetime: "7 months ago"));
+
+// echo strtotime("today")
+// echo  date(format: "y-m-d")
+// echo date(format: 'H:i:s Y-M jS T');
+
+// $date = '2024-1-03';
+// $today = date('y-m-d');
+
+// $diff = (strtotime($today) - strtotime($date));
+
+// echo $diff/(60*60*24);
+
+// scenario :
+// we are requesting the application that we can use in our borrowed company
+// we send money
+
+$date = date("Y-m-d", strtotime("5 days ago"));
+$today = date("Y-m-d");
+$amount = 0;
+$diff = (strtotime($today) - strtotime($date)) / (60 * 60 * 24);
+if ($diff > 2) {
+    $startcharg = $diff - 2;
+    $amount += 100 * $startcharg;
+}
+
+echo "you charge now is " . $amount . "frw";
