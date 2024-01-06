@@ -1,53 +1,31 @@
 <?php
-// PHP has 8 dataTypes
 
-// Strings
+// for loop
+// $arr= [1, 2, 3, 4, 5, 6, 8];
+// for($i = 0; $i< 10;$i++){
+// echo $i;
+// }
+// while loop
+// $i = 0;
+// while($i < 10) {
+//   echo $i;
+//   $i++;
+// }
 
-// $name = "Bahati";
-// $address = 'gisenyi';
+// do while loop
+// the main difference btn while loop and do while is that do while execute first and check after
+// this mean that with do while we print the current execution first then we check after
 
-// make sure you understand difference btn single and double quotes
+// $i= 11;
+// do {
+//   echo $i;
+//   $i++;
+// }while($i < 10);
 
-// echo $sentence = "$name is living in $address";
+// foreach loop
 
-// Interger
+// $arr= [1, 2, 3, 4, 5, 6, 8, 'Bahati', ['bahati', 'ange','bruno']];
 
-use function PHPSTORM_META\type;
-
-// $number_student = 10;
-// echo $number_student;
-
-// Double or Float
-//double hase 64 bit in size
-// float has 32 bit in size that is only the diffrence
-
-// $amout = 100.2;
-// var_dump($amout);
-// // Boolean
-// var_dump(value: 2 === '2');
-
-// Array
-
-// $arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-// print_r($arr);
-
-// $arr2 = [
-//   'name'=> 'Bahati',
-//   'age'=> 10,
-// ];
-
-// print_r($arr2);
-
-// echo $arr2['name'];
-
-// Object
-
-// $date = new DateTime();
-
-// null
-
-// $a = nULL;
-// echo $a;
-// var_dump($a);
-
-// resources
+// foreach ($arr as $key => $values) {
+//   var_dump($key, $values);
+// }
